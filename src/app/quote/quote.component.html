@@ -1,13 +1,25 @@
-<div>
+<div class="container">
   <h1>QOUTES THAT LIVE FOREVER</h1>
   <hr />
-  npm install --save bootstrap popper @import
-  "~bootstrap/dist/css/bootstrap.css"
-  <li *ngFor="let quote of quotes">
-    Author:{{ quote.author }} <br />
-    sender:{{ quote.sender }}<br />
-    Quote: {{ quote.quote }} <br />
-    vote count:{{ votescount }}<button (click)="functionlike()">like</button>
-    <button (click)="functiondislike()">dislike</button>
-  </li>
+  <div class="row">
+    <div class="col-md-6">
+      npm install --save bootstrap popper @import
+      "~bootstrap/dist/css/bootstrap.css"
+      <li *ngFor="let quote of quotes">
+        Author:{{ quote.author }} <br />
+        sender:{{ quote.sender }}<br />
+        Quote: {{ quote.quote }} <br />
+        vote count:{{ votescount
+        }}<button class="btn btn-secondary" (click)="functionlike()">
+          like
+        </button>
+        <button class="btn btn-danger" (click)="functiondislike()">
+          dislike
+        </button>
+      </li>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form></app-quote-form>
+    </div>
+  </div>
 </div>
