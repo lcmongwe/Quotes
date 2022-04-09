@@ -17,13 +17,17 @@
           dislike
         </button>
         <br />
-        <button class="btn-block btn-danger" (click)="functiondislike()">
+        <button class="btn-block btn-danger" (click)="deleteQuote(i)">
           Delete Quote
         </button>
       </li>
     </div>
     <div class="col-md-6">
       <app-quote-form></app-quote-form>
+      <br />
+      <button class="btn-block btn-success" (click)="functiondislike()">
+        Submit Quote
+      </button>
     </div>
   </div>
 </div>
