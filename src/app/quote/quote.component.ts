@@ -17,28 +17,36 @@ export class QuoteComponent implements OnInit {
     {
       author: 'Mecry Lee',
       sender: 'Masika',
-      quote: 'no one lives twice',
+      quote: 'he who has no vision, sight is the most great asset he has',
       postDate: new Date(2020, 7, 3),
     },
     {
       author: 'Abram Nest',
       sender: 'Mongwe',
-      quote: 'no one lives twice',
+      quote: 'silent waters run deep huhuuu!',
       postDate: new Date(2020, 7, 3),
     },
     {
       author: 'Abram Nest',
       sender: 'Mongwe',
-      quote: 'no one lives twice',
+      quote: 'get yourself together, head high and see the open door',
+      postDate: new Date(2020, 7, 3),
+    },
+    {
+      author: 'Abram Nest',
+      sender: 'Mongwe',
+      quote: 'no man is an island',
       postDate: new Date(2020, 7, 3),
     },
   ];
-  votescount: number = 0;
+  votelikes: number = 0;
+  votedislikes: number = 0;
+
   functionlike() {
-    this.votescount++;
+    this.votelikes++;
   }
   functiondislike() {
-    this.votescount--;
+    this.votedislikes++;
   }
 
   deleteQuote(i: any) {
