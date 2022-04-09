@@ -20,3 +20,19 @@ Author: Lucy Mongwe
 - git clone https://github.com/lcmongwe/Quotes.git
 - cd Quotes
 - code . or atom . depending on your text editor
+
+### :computer: TECHNOLOGIES USED
+
+- HTML5
+- CSS
+- TYPESCRIPT
+- MARKDOWN
+- BOOTSTRAP
+
+### :telephone_receiver: CONTACT INFORMATION
+
+Have any questions? reach me on:
+
+1. Twitter : @lucy_Mongwe
+2. faceboook : Lucy Mongwe
+3. Email : lcmongwe@gmail.com
