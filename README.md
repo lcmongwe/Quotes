@@ -13,3 +13,10 @@ This is a simple angular app with a dynamic HTML,CSS, to make it more interactiv
 ### AUTHORS INFORMATION
 
 Author: Lucy Mongwe
+
+### :pushpin:PROJECT SETUP INSTRUCTIONS
+
+- Open terminal {Ctrl +Alt + T}
+- git clone https://github.com/lcmongwe/Quotes.git
+- cd Quotes
+- code . or atom . depending on your text editor
