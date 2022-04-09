@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
-  declarations: [AppComponent, QuoteComponent, QuoteFormComponent],
+  declarations: [AppComponent, QuoteComponent, QuoteFormComponent, HighlightDirective],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

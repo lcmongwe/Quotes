@@ -12,16 +12,19 @@ export class QuoteComponent implements OnInit {
       author: 'Kenneth Matiba',
       sender: 'Lucy',
       quote: 'no one lives twice',
+      postDate: new Date(2020, 7, 3),
     },
     {
       author: 'Mecry Lee',
       sender: 'Masika',
       quote: 'no one lives twice',
+      postDate: new Date(2020, 7, 3),
     },
     {
       author: 'Abram Nest',
       sender: 'Mongwe',
       quote: 'no one lives twice',
+      postDate: new Date(2020, 7, 3),
     },
   ];
   votescount: number = 0;

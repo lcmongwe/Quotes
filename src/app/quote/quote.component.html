@@ -5,10 +5,10 @@
     <div class="col-md-6">
       npm install --save bootstrap popper @import
       "~bootstrap/dist/css/bootstrap.css"
-      <li *ngFor="let quote of quotes">
+      <li *ngFor="let quote of quotes; let i = index">
         Author:{{ quote.author }} <br />
         sender:{{ quote.sender }}<br />
-        Quote: {{ quote.quote }} <br />
+        Quote: {{ quote.quote }} <br />POSTED {{ quote.postDate | date }}<br />
         vote count:{{ votescount }}
         <button class="btn btn-secondary" (click)="functionlike()">like</button>
         <button class="btn btn-danger" (click)="functiondislike()">
