@@ -10,9 +10,15 @@
         sender:{{ quote.sender }}<br />
         Quote: {{ quote.quote }} <br />POSTED {{ quote.postDate | date }}<br />
         vote count:{{ votescount }}
-        <button class="btn btn-secondary" (click)="functionlike()">like</button>
-        <button class="btn btn-danger" (click)="functiondislike()">
+        <button class="btn-sm btn-secondary" (click)="functionlike()">
+          like
+        </button>
+        <button class="btn-sm btn-danger" (click)="functiondislike()">
           dislike
+        </button>
+        <br />
+        <button class="btn-block btn-danger" (click)="functiondislike()">
+          Delete Quote
         </button>
       </li>
     </div>
