@@ -12,13 +12,13 @@ export class QuoteComponent implements OnInit {
       author: 'Kenneth Matiba',
       sender: 'Lucy',
       quote: 'no one lives twice',
-      postDate: new Date(2020, 7, 3),
+      postDate: new Date(2022, 4, 10),
     },
     {
       author: 'Mecry Lee',
       sender: 'Masika',
       quote: 'he who has no vision, sight is the most great asset he has',
-      postDate: new Date(2020, 7, 3),
+      postDate: new Date(2022, 4, 9),
     },
     {
       author: 'Abram Nest',
@@ -42,8 +42,13 @@ export class QuoteComponent implements OnInit {
   votelikes: number = 0;
   votedislikes: number = 0;
 
-  functionlike() {
-    this.votelikes++;
+  functionlike(i: any) {
+    if ((i = true)) {
+      this.votelikes++;
+    } else i != true;
+    {
+      this.votelikes = this.votelikes;
+    }
   }
   functiondislike() {
     this.votedislikes++;

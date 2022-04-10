@@ -1,26 +1,31 @@
 <div class="container" bg-dark text-light>
   <h1>QOUTES THAT LIVE FOREVER</h1>
   <hr />
+
   <div class="row">
     <div class="col-md-6">
-      <li *ngFor="let quote of quotes; let i = index">
-        Author:{{ quote.author }} <br />
-        sender:{{ quote.sender }}<br />
-        Quote: {{ quote.quote }} <br />POSTED {{ quote.postDate | date }}<br />
-        Likes:{{ votelikes }}
-        <button class="btn-sm btn-secondary" (click)="functionlike()">
-          like
-        </button>
-        Dislikes:{{ votedislikes }}
-        <button class="btn-sm btn-danger" (click)="functiondislike()">
-          dislike
-        </button>
-        <br />
-        <button class="btn-block btn-danger" (click)="deleteQuote(i)">
-          Delete Quote
-        </button>
-      </li>
+      <div class="cont">
+        <li *ngFor="let quote of quotes; let i = index; false">
+          Author:{{ quote.author }} <br />
+          sender:{{ quote.sender }}<br />
+          Quote: {{ quote.quote }} <br />POSTED
+          {{ quote.postDate | timeLapse }} Days ago<br />
+          Likes:{{ votelikes }}
+          <button class="btn-sm btn-secondary" (click)="functionlike(i)">
+            like
+          </button>
+          Dislikes:{{ votedislikes }}
+          <button class="btn-sm btn-danger" (click)="functiondislike()">
+            dislike
+          </button>
+          <br />
+          <button class="btn-block btn-danger" (click)="deleteQuote(i)">
+            Delete Quote
+          </button>
+        </li>
+      </div>
     </div>
+
     <div class="col-md-6">
       <app-quote-form></app-quote-form>
       <br />
