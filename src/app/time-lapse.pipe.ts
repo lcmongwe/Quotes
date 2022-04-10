@@ -12,9 +12,9 @@ export class TimeLapsePipe implements PipeTransform {
       Today.getDate()
     );
 
-    var timelapse = Math.abs(value - dateToday);
+    var timelapse = Math.abs(dateToday - value);
     const secs = 86400;
-    var difference = timelapse / secs / 30000;
+    var difference = timelapse / secs;
 
     return difference;
   }
