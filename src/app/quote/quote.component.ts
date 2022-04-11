@@ -8,47 +8,33 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    {
-      author: 'Kenneth Matiba',
-      sender: 'Lucy',
-      quote: 'no one lives twice',
-      postDate: new Date(2022, 4, 10),
-    },
-    {
-      author: 'Mecry Lee',
-      sender: 'Masika',
-      quote: 'he who has no vision, sight is the most great asset he has',
-      postDate: new Date(2022, 4, 9),
-    },
-    {
-      author: 'Abram Nest',
-      sender: 'Mongwe',
-      quote: 'silent waters run deep huhuuu!',
-      postDate: new Date(2022, 7, 3),
-    },
-    {
-      author: 'Abram Nest',
-      sender: 'Mongwe',
-      quote: 'get yourself together, head high and see the open door',
-      postDate: new Date(2022, 7, 3),
-    },
-    {
-      author: 'Abram Nest',
-      sender: 'Mongwe',
-      quote: 'no man is an island',
-      postDate: new Date(2022, 7, 3),
-    },
+    new Quote(
+      0,
+      'Kenneth Matiba',
+      'Lucy',
+      'no one lives twice',
+      new Date(2022, 4, 10)
+    ),
+    new Quote(
+      1,
+      'Mecry Lee',
+      'Masika',
+      'he who has no vision, sight is the most great asset he has',
+      new Date(2022, 4, 9)
+    ),
+    new Quote(
+      2,
+      'Abram Nest',
+      'Mongwe',
+      'silent waters run deep huhuuu!',
+      new Date(2022, 7, 3)
+    ),
   ];
   votelikes: number = 0;
   votedislikes: number = 0;
 
   functionlike(i: any) {
-    if ((i = true)) {
-      this.votelikes++;
-    } else i != true;
-    {
-      this.votelikes = this.votelikes;
-    }
+    this.votelikes = this.votelikes;
   }
   functiondislike() {
     this.votedislikes++;
