@@ -24,19 +24,19 @@ export class QuoteComponent implements OnInit {
       author: 'Abram Nest',
       sender: 'Mongwe',
       quote: 'silent waters run deep huhuuu!',
-      postDate: new Date(2020, 7, 3),
+      postDate: new Date(2022, 7, 3),
     },
     {
       author: 'Abram Nest',
       sender: 'Mongwe',
       quote: 'get yourself together, head high and see the open door',
-      postDate: new Date(2020, 7, 3),
+      postDate: new Date(2022, 7, 3),
     },
     {
       author: 'Abram Nest',
       sender: 'Mongwe',
       quote: 'no man is an island',
-      postDate: new Date(2020, 7, 3),
+      postDate: new Date(2022, 7, 3),
     },
   ];
   votelikes: number = 0;
