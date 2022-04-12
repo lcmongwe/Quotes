@@ -10,12 +10,12 @@
           sender:{{ quote.sender }}<br />
           Quote: {{ quote.quote }} <br />POSTED
           {{ quote.postDate | timeLapse }} Days ago<br />
-          Likes:{{ votelikes }}
+          Likes:{{ quote.votelikes }}
           <button class="btn-sm btn-secondary" (click)="functionlike(i)">
             like
           </button>
-          Dislikes:{{ votedislikes }}
-          <button class="btn-sm btn-danger" (click)="functiondislike()">
+          Dislikes:{{ quote.votedislikes }}
+          <button class="btn-sm btn-danger" (click)="functiondislike(i)">
             dislike
           </button>
           <br />

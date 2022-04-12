@@ -27,24 +27,31 @@ export class QuoteComponent implements OnInit {
       new Date(2022, 7, 3)
     ),
   ];
-  votelikes: number = 0;
-  votedislikes: number = 0;
+  // votelikes: number = 0;
+  // votedislikes: number = 0;
 
-  functionlike(i: any) {
-    this.votelikes = this.votelikes;
+  // functionlike(index:number) {
+  //   this.votelikes = this.votelikes;
+  // }
+  // functiondislike() {
+  //   this.votedislikes++;
+  // }
+  functionlike(index: number) {
+    this.quotes[index].votelikes++;
   }
-  functiondislike() {
-    this.votedislikes++;
+
+  functiondislike(index: number) {
+    this.quotes[index].votelikes--;
   }
 
   deleteQuote(i: any) {
     this.quotes.splice(i);
   }
 
-  addNewQuote(quote: any) {
+  addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    quote.postDate = new Date(quote.postDate);
+    // quote.id = quoteLength + 1;
+    // quote.postDate = new Date(quote.postDate);
     this.quotes.push(quote);
   }
 
