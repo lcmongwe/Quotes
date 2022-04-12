@@ -13,32 +13,24 @@ export class QuoteComponent implements OnInit {
       'Kenneth Matiba',
       'Lucy',
       'no one lives twice',
-      new Date(2022, 4, 10)
+      new Date(2022, 2, 10)
     ),
     new Quote(
       1,
       'Mecry Lee',
       'Masika',
       'he who has no vision, sight is the most great asset he has',
-      new Date(2022, 4, 9)
+      new Date(2022, 3, 9)
     ),
     new Quote(
       2,
       'Abram Nest',
       'Mongwe',
       'silent waters run deep huhuuu!',
-      new Date(2022, 7, 3)
+      new Date(2022, 2, 3)
     ),
   ];
-  // votelikes: number = 0;
-  // votedislikes: number = 0;
 
-  // functionlike(index:number) {
-  //   this.votelikes = this.votelikes;
-  // }
-  // functiondislike() {
-  //   this.votedislikes++;
-  // }
   functionLike(index: number) {
     this.quotes[index].voteLikes++;
   }
