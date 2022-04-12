@@ -6,10 +6,16 @@
     <div class="col-md-6">
       <div class="cont">
         <li *ngFor="let quote of quotes; let i = index">
-          Author:{{ quote.author }} <br />
-          sender:{{ quote.sender }}<br />
-          Quote: {{ quote.yourQuote }} <br />POSTED
-          {{ quote.postDate | timeLapse }} Days ago<br />
+          <span style="color: orangered"> AUTHOR :</span>{{ quote.author }}
+          <br />
+
+          <span style="color: green"> SENDER:</span>{{ quote.sender }}<br />
+
+          <span style="color: orangered"> QUOTE:</span> {{ quote.yourQuote }}
+          <br />
+
+          <span style="color: green"> POSTED: </span
+          >{{ quote.postDate | timeLapse }} Days ago<br />
           Likes:{{ quote.voteLikes }}
           <button class="btn-sm btn-secondary" (click)="functionLike(i)">
             like
