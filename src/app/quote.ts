@@ -1,15 +1,16 @@
 export class Quote {
   public showDetails: boolean;
-  public votelikes: number;
-  public votedislikes: number;
+  public voteLikes: number;
+  public voteDislikes: number;
   constructor(
+    public id: number,
     public author: string,
     public sender: string,
-    public quote: string,
+    public yourQuote: string,
     public postDate: Date
   ) {
     this.showDetails = false;
-    this.votelikes = 0;
-    this.votedislikes = 0;
+    this.voteLikes = 0;
+    this.voteDislikes = 0;
   }
 }

@@ -8,14 +8,14 @@
         <li *ngFor="let quote of quotes; let i = index">
           Author:{{ quote.author }} <br />
           sender:{{ quote.sender }}<br />
-          Quote: {{ quote.quote }} <br />POSTED
+          Quote: {{ quote.yourQuote }} <br />POSTED
           {{ quote.postDate | timeLapse }} Days ago<br />
-          Likes:{{ quote.votelikes }}
-          <button class="btn-sm btn-secondary" (click)="functionlike(i)">
+          Likes:{{ quote.voteLikes }}
+          <button class="btn-sm btn-secondary" (click)="functionLike(i)">
             like
           </button>
-          Dislikes:{{ quote.votedislikes }}
-          <button class="btn-sm btn-danger" (click)="functiondislike(i)">
+          Dislikes:{{ quote.voteDislikes }}
+          <button class="btn-sm btn-danger" (click)="functionDislike(i)">
             dislike
           </button>
           <br />
@@ -29,7 +29,6 @@
     <div class="col-md-6">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       <br />
-      <button type="submit" class="btn-block btn-success">Submit Quote</button>
     </div>
   </div>
 </div>

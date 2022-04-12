@@ -9,18 +9,21 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
+      0,
       'Kenneth Matiba',
       'Lucy',
       'no one lives twice',
       new Date(2022, 4, 10)
     ),
     new Quote(
+      1,
       'Mecry Lee',
       'Masika',
       'he who has no vision, sight is the most great asset he has',
       new Date(2022, 4, 9)
     ),
     new Quote(
+      2,
       'Abram Nest',
       'Mongwe',
       'silent waters run deep huhuuu!',
@@ -36,22 +39,22 @@ export class QuoteComponent implements OnInit {
   // functiondislike() {
   //   this.votedislikes++;
   // }
-  functionlike(index: number) {
-    this.quotes[index].votelikes++;
+  functionLike(index: number) {
+    this.quotes[index].voteLikes++;
   }
 
-  functiondislike(index: number) {
-    this.quotes[index].votelikes--;
+  functionDislike(index: number) {
+    this.quotes[index].voteDislikes++;
   }
 
   deleteQuote(i: any) {
-    this.quotes.splice(i);
+    this.quotes.splice(i, 1);
   }
 
   addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
-    // quote.id = quoteLength + 1;
-    // quote.postDate = new Date(quote.postDate);
+    quote.id = quoteLength + 1;
+    quote.postDate = new Date(quote.postDate);
     this.quotes.push(quote);
   }
 

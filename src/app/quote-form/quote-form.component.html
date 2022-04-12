@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <h2 class="text-center">ADD A LIVING QUOTE</h2>
   <hr />
-  <form (ngSubmit)="(submitQuote)" #quoteForm="ngForm">
+  <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
     <div class="form-group">
       <label for="author">AUTHOR</label>
       <input
@@ -10,7 +10,7 @@
         class="form-control"
         id="author"
         [(ngModel)]="newQuote.author"
-        author="author"
+        name="author"
         #author="ngModel"
         required
       />
@@ -24,34 +24,25 @@
         class="form-control"
         id="sender"
         [(ngModel)]="newQuote.sender"
-        sender="sender"
+        name="sender"
         #sender="ngModel"
         required
       />
     </div>
 
     <div class="form-group">
-      <label for="quote">WRITE YOUR QUOTE HERE</label>
+      <label for="yourQuote">WRITE YOUR QUOTE HERE</label>
       <textarea
         class="form-control"
-        id="quote"
+        id="yourQuote"
         rows="4"
-        [(ngModel)]="newQuote.quote"
-        quote="quote"
-        #quote="ngModel"
+        [(ngModel)]="newQuote.yourQuote"
+        name="quote"
+        #yourQuote="ngModel"
         required
       ></textarea>
     </div>
-    <div class="form-group">
-      <label for="post">Date Posted</label>
-      <input
-        type="date"
-        id="post"
-        [(ngModel)]="newQuote.postDate"
-        postDate="postDate"
-        #postDate="ngModel"
-        required
-      />
-    </div>
+
+    <button type="submit" class="btn-block btn-success">Submit Quote</button>
   </form>
 </div>
