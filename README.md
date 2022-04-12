@@ -4,7 +4,7 @@ Quotes App.
 
 ## SCREENSHOT
 
-![QUOTES APP](src/assets/quotes.png)
+![QUOTES APP](src/assets/Screenshot.png)
 
 ### :bulb: PROJECT DESCRIPTION
 
